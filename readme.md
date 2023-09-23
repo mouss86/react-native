@@ -1,1 +1,1 @@
-This is some info about my repository
+# react-native
