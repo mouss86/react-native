@@ -24,7 +24,6 @@ export default App = () => {
     } 
   } 
 
-
   var n1 = 0;
   if (number1.toLocaleLowerCase() == "ett") {
     n1 = 1;
@@ -46,27 +45,20 @@ export default App = () => {
   if (number2.toLocaleLowerCase() == "tre") {
     n2 = 3;
   }
-  if (whattodo == "Plus") {
-    setResultNumber(n1 + n2);
-  }
-  if (whattodo == "Minus") {
-    setResultNumber(n1 - n2);
-  }
-
-  var whattodo = "";
 
   return (
     <View style={styles.container}>
-      <View style={styles.resultHeader}>
-        <Text style={styles.numbertext}>{resultNumber}</Text>
-      </View>
-
       <Button
         title="Plus"
         onPress={() => {
           fancycalc("Plus");
         }}
       />
+
+      <View style={styles.resultHeader}>
+        <Text style={styles.numbertext}>{resultNumber}</Text>
+      </View>
+
 
       <Button
         title="Minus"
@@ -80,16 +72,7 @@ export default App = () => {
       onPress={() => {
         fancycalc("reset");
       }}
-
-
-
-        />
-
-
-
-
-
-
+      />
 
     </View>
   );
