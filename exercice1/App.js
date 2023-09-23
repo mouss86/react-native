@@ -57,7 +57,7 @@ export default App = () => {
 
   return (
     <View style={styles.container}>
-      <View style={styles.resulHeader}>
+      <View style={styles.resultHeader}>
         <Text style={styles.numbertext}>{resultNumber}</Text>
       </View>
 
@@ -102,7 +102,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: "#ffffff",
   },
-  resulHeader: {
+  resultHeader: {
     backgroundColor: "#0000ff",
     alignItems: "center",
     justifyContent: "center",
